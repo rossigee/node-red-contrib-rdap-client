@@ -15,5 +15,5 @@ module.exports = function (RED) {
             });
         });
     };
-    RED.nodes.registerType("rdap-ip-lookup", IPLookupNode);
+    RED.nodes.registerType("rdap-lookup", IPLookupNode);
 };

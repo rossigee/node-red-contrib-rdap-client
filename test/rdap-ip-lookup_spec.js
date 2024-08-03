@@ -1,9 +1,9 @@
 var helper = require("node-red-node-test-helper");
-var ipLookupNode = require("../rdap-ip-lookup.js");
+var ipLookupNode = require("../rdap-lookup.js");
 
 helper.init(require.resolve('node-red'));
 
-describe('rdap-ip-lookup Node', function () {
+describe('rdap-lookup Node', function () {
 
   beforeEach(function (done) {
     helper.startServer(done);
@@ -18,7 +18,7 @@ describe('rdap-ip-lookup Node', function () {
     var flow = [
       {
         id: "n1",
-        type: "rdap-ip-lookup",
+        type: "rdap-lookup",
         name: "test name"
       }
     ];
@@ -37,7 +37,7 @@ describe('rdap-ip-lookup Node', function () {
     var flow = [
       {
         id: "n1",
-        type: "rdap-ip-lookup",
+        type: "rdap-lookup",
         name: "test name",
         wires: [
           [

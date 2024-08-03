@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('rdap-ip-lookup',{
+    RED.nodes.registerType('rdap-lookup',{
         category: 'function',
         color: '#a6bbcf',
         defaults: {
@@ -11,18 +11,18 @@
         outputs: 1,
         icon: "icon.svg",
         label: function() {
-            return this.name||"rdap-ip-lookup";
+            return this.name||"rdap-lookup";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="rdap-ip-lookup">
+<script type="text/html" data-template-name="rdap-lookup">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/html" data-help-name="rdap-ip-lookup">
+<script type="text/html" data-help-name="rdap-lookup">
     <p>Node that returns RDAP information for a given IP address</p>
 </script>
