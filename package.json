@@ -1,0 +1,31 @@
+{
+   "author": "Ross Golder <ross@golder.org> (https://golder.org/)",
+   "dependencies": {
+      "rdap-client": "^1.0.5"
+   },
+   "description": "Nodes that perform RDAP lookups for various resources.",
+   "devDependencies": {
+      "mocha": "^9.2.2",
+      "node-red": "^4.0.2",
+      "node-red-node-test-helper": "^0.3.4"
+   },
+   "funding": {
+      "type": "individual",
+      "url": "https://bitcoin.rocks"
+   },
+   "homepage": "https://github.com/rossigee/node-red-contrib-rdap-client",
+   "keywords": [
+      "rdap"
+   ],
+   "license": "GPL-3.0-or-later",
+   "name": "node-red-contrib-rdap-client",
+   "node-red": {
+      "nodes": {
+         "rdap-ip-lookup": "rdap-ip-lookup.js"
+      }
+   },
+   "scripts": {
+      "test": "mocha \"test/**/*_spec.js\""
+   },
+   "version": "0.1.0"
+}
